@@ -59,7 +59,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
-                    <mainClass>ru.ixsys.passport.Main</mainClass>
+                    <mainClass>ru.ixsys.passport.RealMain</mainClass>
                 </configuration>
             </plugin>
         </plugins>

@@ -5,7 +5,7 @@
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ru.ixsyys</groupId>
+    <groupId>ru.ixsys</groupId>
     <artifactId>passport-recognition</artifactId>
     <version>1.0.0</version>
 

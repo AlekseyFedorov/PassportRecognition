@@ -3,7 +3,7 @@
 //public class OpenCVUtil {
 //}
 
-package ru.ixsyys.passport.util;
+package ru.ixsys.passport.util;
 
 import org.opencv.core.*;
 import org.opencv.imgproc.Imgproc;

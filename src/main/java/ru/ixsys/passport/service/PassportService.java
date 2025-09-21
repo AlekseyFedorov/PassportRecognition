@@ -3,13 +3,17 @@
 //public class PassportService {
 //}
 
-package ru.ixsyys.passport.service;
+package ru.ixsys.passport.service;
 
-import ru.ixsyys.passport.model.PassportData;
+import ru.ixsys.passport.model.PassportData;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
 public class PassportService {
+
+    public ImageProcessingService getImageService() {
+        return imageService;
+    }
 
     private final ImageProcessingService imageService;
 

@@ -6,7 +6,7 @@
 //    }
 //}
 
-package ru.ixsyys.passport;
+package ru.ixsys.passport;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ru.ixsyys.passport.controller.PassportController"
+      spacing="10" style="-fx-padding: 20; -fx-background-color: #f0f0f0;">
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Распознавание российского паспорта"
+               style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+        <Label text="by ixsyys.ru" style="-fx-text-fill: #666;"/>
+    </HBox>
+
+    <Separator/>
+
+    <HBox spacing="20">
+        <VBox spacing="10" prefWidth="400">
+            <Label text="Оригинальное изображение:"/>
+            <ImageView fx:id="originalImageView" fitWidth="400" fitHeight="250"
+                       preserveRatio="true" style="-fx-border-color: #ccc; -fx-border-width: 1;"/>
+
+            <Label text="Обработанное изображение:"/>
+            <ImageView fx:id="processedImageView" fitWidth="400" fitHeight="250"
+                       preserveRatio="true" style="-fx-border-color: #ccc; -fx-border-width: 1;"/>
+
+            <HBox spacing="10">
+                <Button fx:id="selectImageButton" text="Выбрать изображение"
+                        onAction="#handleSelectImage" prefWidth="200"/>
+                <Button fx:id="recognizeButton" text="Распознать"
+                        onAction="#handleRecognize" prefWidth="200" disable="true"/>
+                <ProgressIndicator fx:id="progressIndicator" progress="0"
+                                   prefWidth="30" prefHeight="30"/>
+            </HBox>
+        </VBox>
+
+        <VBox spacing="10" prefWidth="400">
+            <Label text="Результаты распознавания:"/>
+            <TextArea fx:id="resultTextArea" prefWidth="400" prefHeight="500"
+                      style="-fx-font-family: monospace; -fx-font-size: 12px;"
+                      wrapText="true" editable="false"/>
+        </VBox>
+    </HBox>
+</VBox>

@@ -4,7 +4,7 @@
 //
 //}
 
-package ru.ixsyys.passport.model;
+package ru.ixsys.passport.model;
 
 public class PassportData {
     private String series;

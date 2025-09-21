@@ -3,17 +3,15 @@
 //public class ImageProcessingService {
 //}
 
-package ru.ixsyys.passport.service;
+package ru.ixsys.passport.service;
 
 import org.opencv.core.*;
 import org.opencv.imgcodecs.Imgcodecs;
 import net.sourceforge.tess4j.Tesseract;
 import net.sourceforge.tess4j.TesseractException;
-import ru.ixsyys.passport.util.OpenCVUtil;
+import ru.ixsys.passport.util.OpenCVUtil;
 
 import java.io.File;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
 
 public class ImageProcessingService {
 
